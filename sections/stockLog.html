@@ -1,0 +1,32 @@
+<section id="stockLog">
+    <h2>Stock Opname : <b id="dateTimeData"></b></h2>
+    <div class="header-container"> <!-- New container to align both elements -->
+        <div id="btnGoBack">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" onclick="backTo()" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+            </svg>
+
+            <button id="inputStockOpnameDataBtn" onclick="inputStockOpnameData()">Add Stock Opname</button>
+
+        </div>
+        <button id="startStockOpname" class="btn-start" onclick="toggleStockOpname()">Start Stock Opname</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nomor Urut</th>
+                <th>product code</th>
+                <th>product name</th>
+                <th>database_qty</th>
+                <th>update_qty</th>
+                <th>Status Stock</th>
+                <th>updated_at</th>
+                <th>Checked By</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="stockLogData">
+          <!-- The data loop -->
+        </tbody>
+    </table>
+</section>
